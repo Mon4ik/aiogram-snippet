@@ -1,5 +1,8 @@
 from dispatcher import dp
 from aiogram.types import *
+from utils import *
+
+database = db.DBParser("database.sqlite3")
 
 
 @dp.message_handler(commands=['start'])
